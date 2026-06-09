@@ -45,14 +45,7 @@ export function Hero() {
           transition={{ delay: 0.3 }}
           className="mt-10 flex flex-wrap items-center justify-center gap-3"
         >
-          <a
-            href={GITHUB_URL}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 h-12 px-6 rounded-full bg-gradient-primary text-primary-foreground font-medium shadow-elegant hover:shadow-glow transition-all"
-          >
-            <Github className="h-4 w-4" /> View Code <ArrowRight className="h-4 w-4" />
-          </a>
+          
           <button
             onClick={() => toast.success("Report download started", { description: "A PDF summary will be available shortly." })}
             className="inline-flex items-center gap-2 h-12 px-6 rounded-full border border-border bg-card hover:bg-accent transition-colors font-medium"

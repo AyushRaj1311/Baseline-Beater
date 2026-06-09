@@ -7,7 +7,7 @@ import { Improvements } from "@/components/sections/improvements";
 import { MathExplanation } from "@/components/sections/math-explanation";
 import { Tech } from "@/components/sections/tech";
 import { Results } from "@/components/sections/results";
-import { Repo } from "@/components/sections/repo";
+
 import { FAQ } from "@/components/sections/faq";
 import { Footer } from "@/components/sections/footer";
 
@@ -27,7 +27,7 @@ function Index() {
         <MathExplanation />
         <Tech />
         <Results />
-        <Repo />
+        
         <FAQ />
       </main>
       <Footer />

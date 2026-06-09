@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Moon, Sun, Github, Sparkles } from "lucide-react";
+import { Menu, X, Moon, Sun, Sparkles } from "lucide-react";
 import { useTheme } from "./theme-provider";
-import { GITHUB_URL } from "@/data/project";
+
 
 const links = [
   { href: "#about", label: "About" },
@@ -55,14 +55,8 @@ export function Navbar() {
           >
             {theme === "dark" ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </button>
-          <a
-            href={GITHUB_URL}
-            target="_blank"
-            rel="noreferrer"
-            className="hidden sm:inline-flex items-center gap-2 h-9 px-4 rounded-full bg-gradient-primary text-primary-foreground text-sm font-medium shadow-elegant hover:opacity-90 transition"
-          >
-            <Github className="h-4 w-4" /> GitHub
-          </a>
+          {/* GitHub button removed per request */}
+
           <button
             onClick={() => setOpen(o => !o)}
             className="md:hidden h-9 w-9 grid place-items-center rounded-full border border-border"
@@ -87,9 +81,8 @@ export function Navbar() {
                   {l.label}
                 </a>
               ))}
-              <a href={GITHUB_URL} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 h-10 px-4 rounded-full bg-gradient-primary text-primary-foreground text-sm font-medium justify-center">
-                <Github className="h-4 w-4" /> View Repo
-              </a>
+              {/* Mobile GitHub link removed */}
+
             </div>
           </motion.div>
         )}

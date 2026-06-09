@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Moon, Sun, Github, Sparkles } from "lucide-react";
+import { Menu, X, Moon, Sun, Sparkles } from "lucide-react";
 import { useTheme } from "./theme-provider";
-import { GITHUB_URL } from "@/data/project";
+
 
 const links = [
   { href: "#about", label: "About" },
